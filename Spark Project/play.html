@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Solo Quest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="playDice.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <img id="bannerimg" src="img/banner2.png" style="width:30%">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="play.html">Play</a>
+            <a href="contact.html">Contact us!</a>
+        </div>
+        <br>
+        <table id="game">
+            <tr id="column1">
+                <td id = "col1r1"><h3 id= "roomLabel">Room:</h3> <h3 id ="room">00</h3><h3 id="totalR">/30</h3><h5 id="current"></h5></td>
+                <td id = "col2r1"><h3 id="q">Here goes the question</h3></td>
+                <td rowspan="3"><img id="battle" src="img\clear.png"></th>
+                <td rowspan="3" valign="bottom"><button type = "button" id = "music"></button></td>
+                <audio id="myAudio" src="122-cave-of-darkness.mp3" type="audio/mpeg" loop= true></audio>
+            </tr>
+            <tr>
+                <td><h3>Roll the dice!</h3></td>
+                <td>
+                    <input type= "radio" name = "radioChoice" id ="a1" ><label id = "a">a</label><br>
+                    <input type= "radio" name = "radioChoice" id ="b1"><label id = "b">b</label><br>
+                    <input type= "radio" name = "radioChoice" id="c1"><label id = "c">c</label><br>
+                    <input type= "radio" name = "radioChoice" id="d1"><label id = "d">d</label><br>
+                    <input type="hidden" id="cAnswer" value="">
+                    <br>
+                    <button type = "button" id = "answer">Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button type = "button" id = "roll"></button></td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+    </div>
